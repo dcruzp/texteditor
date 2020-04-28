@@ -25,12 +25,23 @@ para correrlo solo corre el comando siguiente en tu consola
 ```
 ./editor.o
 ```
+### Ejemplo 
+
+Ahora puedes ver el contenido de un fichero pero sin editarlo tadavia , tambien puedes mover el cursor en la pantalla y todo funciona ok , como en un editor normal (se puede mover el texto con las frechar de arriba de abajo y home key y demas funciones ) 
+
+Puedes correr el sigiente ejamplo para poder ver las nuevas funcionalidades 
+
+```
+./editor.o editor.c
+```
 
 ### Nota 
 
 El pryecto esta en desarrollo 
 Solo funciona mover el cursor en la pantalla de la terminal 
 El objetivo es simular algo parecido al vim (claro con muchas menos funcioanlidades ) 
+
+Puedes tambien cargar un fichero y ver todo su contenido 
 
 
 ## Autor

@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdarg.h>
 #include <stdlib.h>
 #include <errno.h>
 #include <sys/ioctl.h>
 #include <termios.h>
+#include <time.h>
 #include <unistd.h>
 
 void die (const char *s);
@@ -30,6 +32,9 @@ struct editorConfig
     int screencols ;
     int numrows;
     erow *row ; 
+    char *filename;
+    char statusmsg[80];
+    time_t statusmsg_time;
     struct termios orig_termios; 
 };
 
