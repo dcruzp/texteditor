@@ -32,6 +32,7 @@ struct editorConfig
     int screencols ;
     int numrows;
     erow *row ; 
+    int dirty;
     char *filename;
     char statusmsg[80];
     time_t statusmsg_time;
@@ -40,6 +41,7 @@ struct editorConfig
 
 enum editorKey 
 {
+    BACKSPACE = 127,
     ARROW_LEFT = 1000 , 
     ARROW_RIGHT,
     ARROW_UP,
